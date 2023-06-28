@@ -5,21 +5,13 @@
 const windowHeightValueBox = document.querySelector('.windowHeightNum');
 const bodyHeightValueBox = document.querySelector('.bodyHeightNum');
 const body = document.querySelector('body');
+const h1 = document.querySelector('.primaryHeading');
 
-let windowHeightValue = window.innerHeight;
-let bodyHeightValue = body.offsetHeight;
-
-
-windowHeightValueBox.textContent = `${windowHeightValue}px`;
-bodyHeightValueBox.textContent = `${bodyHeightValue}px`;
-
-window.addEventListener('resize', function(){
-    windowHeightValue = window.innerHeight;
-    bodyHeightValue = body.offsetHeight;
-
-    windowHeightValueBox.textContent = `${windowHeightValue}px`;
-    bodyHeightValueBox.textContent = `${bodyHeightValue}px`;
-
-
+window.addEventListener('resize', function () {
+    body.style.backgroundColor = "brown";
+    body.style.minHeight = `${window.innerHeight - 34}px`;
+    h1.textContent = "ViewableHeight after refresh";
+    
 });
+
 
