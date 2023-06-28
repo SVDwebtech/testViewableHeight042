@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: whitesmoke;
+    
+    background-color: magenta;
+    border: 10px solid lime;
+
+    min-height: 100vh;
+}
+
+.windowHeightPar, .bodyHeightPar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.windowHeightNum, .bodyHeightNum {
+
+    padding: .25rem;
+    margin: .25rem;    
+
+}
